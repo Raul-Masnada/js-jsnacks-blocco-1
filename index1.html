@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Array</title>
+  </head>
+  <body>
+    <script>
+      var arr1 = [ 5 ,2 , 4 ];
+      var arr2 = [ 15, 2, 7, 20 , 15 , 5 ,6 ,34 ,234 ];
+
+      if (arr1.length < arr2.length) {
+
+        var longArr = arr2;
+        var shortArr = arr1;
+
+      } else if (arr1.length > arr2.length) {
+
+        var longArr = arr1;
+        var shortArr = arr2;
+
+      } else {
+
+        var longArr = arr2;
+        var shortArr = arr1;
+      }
+
+      var elem = longArr.length - shortArr.length;
+
+      for (var i = 0; i < elem; i++) {
+
+        var rnd = Math.floor(Math.random() * 100 + 1);
+        shortArr.push(rnd);
+      }
+
+      console.log(shortArr);
+      console.log(longArr);
+
+    </script>
+  </body>
+</html>

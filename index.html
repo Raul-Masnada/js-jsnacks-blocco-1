@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CognomiCasuali</title>
+  </head>
+  <body>
+    <script>
+    var cognomi = ["masnada", "locatelli" ,"franceschini", "scalvini", "berlusconi",];
+    var nomi = ["raul", "Sara", "francesca", "Mirko", "silvio", "matteo", "franco", "giuseppe"];
+
+    var fullNames = [];
+
+    for (var i = 0; i < 5 ;i++) {
+
+      var cognomiRnd = cognomi[Math.floor(Math.random() * cognomi.length)];
+      var nomiRnd = nomi[Math.floor(Math.random() * nomi.length)];
+      var elem = nomiRnd + " " + cognomiRnd;
+      fullNames.push(elem);
+    }
+
+    console.log(fullNames);
+
+    </script>
+  </body>
+</html>
